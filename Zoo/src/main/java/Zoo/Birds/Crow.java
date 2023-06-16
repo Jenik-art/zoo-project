@@ -8,7 +8,7 @@ public class Crow extends Bird {
         this.crowName = crowName;
         this.animalName = "Crow";
         this.animalInfo = String.format("It's a %s, his name is %s",animalName,crowName);
-        listOfAnimals.add(animalName);
+        listOfAnimalsName.add(animalName);
     }
 
     @Override

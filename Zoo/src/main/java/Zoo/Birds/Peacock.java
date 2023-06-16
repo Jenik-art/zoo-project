@@ -8,7 +8,7 @@ public class Peacock extends Bird {
         this.peacockName = peacockName;
         this.animalName = "Peacock";
         this.animalInfo = String.format("It's a %s, his name is %s",animalName,peacockName);
-        listOfAnimals.add(animalName);
+        listOfAnimalsName.add(animalName);
     }
 
     @Override

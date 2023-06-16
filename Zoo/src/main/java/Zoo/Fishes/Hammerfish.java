@@ -8,7 +8,7 @@ public class Hammerfish extends Fish {
         this.hammerfishName = hammerfishName;
         this.animalName = "Hammerfish";
         this.animalInfo = String.format("It's a %s, his name is %s",animalName,hammerfishName);
-        listOfAnimals.add(animalName);
+        listOfAnimalsName.add(animalName);
     }
 
     @Override

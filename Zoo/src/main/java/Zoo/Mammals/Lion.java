@@ -1,5 +1,6 @@
 package Zoo.Mammals;
 
+import Zoo.Animal;
 import Zoo.Mammal;
 
 public class Lion extends Mammal {
@@ -8,7 +9,7 @@ public class Lion extends Mammal {
         this.lionName = lionName;
         this.animalName = "Lion";
         this.animalInfo = String.format("It's a %s, his name is %s",animalName,lionName);
-        listOfAnimals.add(animalName);
+        listOfAnimalsName.add(animalName);
     }
 
 

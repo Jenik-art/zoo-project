@@ -8,7 +8,7 @@ public class Elephant extends Mammal {
         this.elephantName = elephantName;
         this.animalName = "Elephant";
         this.animalInfo = String.format("It's a %s, his name is %s",animalName,elephantName);
-        listOfAnimals.add(animalName);
+        listOfAnimalsName.add(animalName);
     }
 
     @Override
