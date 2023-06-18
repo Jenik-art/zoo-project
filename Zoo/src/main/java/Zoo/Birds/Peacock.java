@@ -1,6 +1,7 @@
 package Zoo.Birds;
 
 import Zoo.Bird;
+import Zoo.Menu;
 
 public class Peacock extends Bird {
     String peacockName;
@@ -8,7 +9,7 @@ public class Peacock extends Bird {
         this.peacockName = peacockName;
         this.animalName = "Peacock";
         this.animalInfo = String.format("It's a %s, his name is %s",animalName,peacockName);
-        listOfAnimalsName.add(animalName);
+        Menu.listOfAnimalsName.add(animalName);
     }
 
     @Override

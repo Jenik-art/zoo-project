@@ -1,6 +1,7 @@
 package Zoo.Fishes;
 
 import Zoo.Fish;
+import Zoo.Menu;
 
 public class Hammerfish extends Fish {
     String hammerfishName;
@@ -8,7 +9,7 @@ public class Hammerfish extends Fish {
         this.hammerfishName = hammerfishName;
         this.animalName = "Hammerfish";
         this.animalInfo = String.format("It's a %s, his name is %s",animalName,hammerfishName);
-        listOfAnimalsName.add(animalName);
+        Menu.listOfAnimalsName.add(animalName);
     }
 
     @Override

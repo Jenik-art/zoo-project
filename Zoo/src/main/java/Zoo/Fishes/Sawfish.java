@@ -1,6 +1,7 @@
 package Zoo.Fishes;
 
 import Zoo.Fish;
+import Zoo.Menu;
 
 public class Sawfish extends Fish {
     String sawfishName;
@@ -8,7 +9,7 @@ public class Sawfish extends Fish {
         this.sawfishName = sawfishName;
         this.animalName = "SawfishName";
         this.animalInfo = String.format("It's a %s, his name is %s",animalName,sawfishName);
-        listOfAnimalsName.add(animalName);
+        Menu.listOfAnimalsName.add(animalName);
     }
 
     @Override

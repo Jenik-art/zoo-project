@@ -1,6 +1,9 @@
 package Zoo.Mammals;
 
 import Zoo.Mammal;
+import Zoo.Menu;
+
+
 
 public class Elephant extends Mammal {
     String elephantName;
@@ -8,7 +11,7 @@ public class Elephant extends Mammal {
         this.elephantName = elephantName;
         this.animalName = "Elephant";
         this.animalInfo = String.format("It's a %s, his name is %s",animalName,elephantName);
-        listOfAnimalsName.add(animalName);
+        Menu.listOfAnimalsName.add(animalName);
     }
 
     @Override

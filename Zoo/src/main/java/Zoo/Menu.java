@@ -10,11 +10,20 @@ import Zoo.Mammals.Elephant;
 import Zoo.Mammals.Lion;
 import Zoo.Mammals.Racoon;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public abstract class Menu extends Animal{
-    public static void userMenu(){
+public class Menu {
 
+    public static ArrayList<String> listOfAnimalsName = new ArrayList<>();
+    public static ArrayList<Animal> listOfAnimals = new ArrayList<>();
+    private static void getListOfAnimal() {
+        for (int i = 0; i <= listOfAnimalsName.size() - 1; i++) {
+            String animals = String.format("%d. %s", i + 1, listOfAnimalsName.get(i));
+            System.out.println(animals);
+        }
+    }
+    public static void userMenu(){
 
         Lion bonifaci = new Lion("Bonifaci");
         Elephant dumbo = new Elephant("Dumbo");
@@ -39,7 +48,7 @@ public abstract class Menu extends Animal{
         int choice;
         System.out.println("What would you like to see? Choose any options to get more information about animal:");
         do {
-            Animal.getListOfAnimal();
+            getListOfAnimal();
             System.out.println("0. Exit");
             Scanner scanner = new Scanner(System.in);
             choice =scanner.nextInt();
