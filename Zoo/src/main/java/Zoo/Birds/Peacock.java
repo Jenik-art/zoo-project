@@ -1,10 +1,11 @@
 package Zoo.Birds;
 
+import Zoo.Animal;
 import Zoo.Bird;
 import Zoo.Menu;
 
 public class Peacock extends Bird {
-    String peacockName;
+    private final String peacockName;
     public Peacock(String peacockName){
         this.peacockName = peacockName;
         this.animalName = "Peacock";
@@ -14,6 +15,6 @@ public class Peacock extends Bird {
 
     @Override
     public void uniqueAction() {
-        System.out.println("He can spread his amazing tail");;
+        System.out.println("He can spread his amazing tail");
     }
 }

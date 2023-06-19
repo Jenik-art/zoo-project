@@ -3,8 +3,8 @@ package Zoo;
 import java.util.ArrayList;
 
 public abstract class Animal {
-    protected static String animalName;
-    protected static String animalInfo;
+    protected String animalName;
+    protected String animalInfo;
     public abstract void iMove();
     public abstract void iBreath();
     public abstract void uniqueAction();

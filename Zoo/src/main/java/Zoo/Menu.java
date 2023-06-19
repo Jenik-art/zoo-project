@@ -11,6 +11,7 @@ import Zoo.Mammals.Lion;
 import Zoo.Mammals.Racoon;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Menu {
@@ -47,19 +48,25 @@ public class Menu {
 
         int choice;
         System.out.println("What would you like to see? Choose any options to get more information about animal:");
+
         do {
-            getListOfAnimal();
-            System.out.println("0. Exit");
-            Scanner scanner = new Scanner(System.in);
-            choice =scanner.nextInt();
-            scanner.nextLine();
-            if (choice > 0 && choice <=9){
-                listOfAnimals.get(choice-1).getAllInfo();
-                System.out.println("Would you like to see other animal?");
-                System.out.println();
-            } else if (choice != 0 && choice > 9){
-                System.out.println("Please choose one more time.");
+            try {
+                getListOfAnimal();
+                System.out.println("0. Exit");
+                Scanner scanner = new Scanner(System.in);
+                choice = scanner.nextInt();
+                scanner.nextLine();
+                if (choice > 0 && choice <=9){
+                    listOfAnimals.get(choice - 1).getAllInfo();
+                    System.out.println("Would you like to see other animal?");
+                    System.out.println();
+                } else if (choice != 0 && choice > 9){
+                    System.out.println("Please choose one more time.");
+                }
+            }catch (InputMismatchException e){
+                System.out.println("Unknown command. Please, try again.");
             }
+            choice = 10; // Probably there is another solution to fix this issue, where variable is not visible for loop
         } while (choice !=0);
 
     }

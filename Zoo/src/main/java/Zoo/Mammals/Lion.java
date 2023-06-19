@@ -16,7 +16,7 @@ public class Lion extends Mammal {
 
     @Override
     public void uniqueAction() {
-        System.out.println("He can growl: Rrrrrr!");;
+        System.out.println("He can growl: Rrrrrr!");
     }
 
 }
