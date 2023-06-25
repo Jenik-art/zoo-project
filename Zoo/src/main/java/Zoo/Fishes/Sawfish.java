@@ -7,7 +7,7 @@ public class Sawfish extends Fish {
     String sawfishName;
     public Sawfish(String sawfishName){
         this.sawfishName = sawfishName;
-        this.animalName = "SawfishName";
+        this.animalName = "Sawfish";
         this.animalInfo = String.format("It's a %s, his name is %s",animalName,sawfishName);
         Menu.listOfAnimalsName.add(animalName);
     }

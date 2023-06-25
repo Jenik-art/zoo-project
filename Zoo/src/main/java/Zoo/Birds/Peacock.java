@@ -5,7 +5,7 @@ import Zoo.Bird;
 import Zoo.Menu;
 
 public class Peacock extends Bird {
-    private final String peacockName;
+     String peacockName;
     public Peacock(String peacockName){
         this.peacockName = peacockName;
         this.animalName = "Peacock";

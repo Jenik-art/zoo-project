@@ -17,8 +17,8 @@ import java.util.Scanner;
 public class Menu {
 
     public static ArrayList<String> listOfAnimalsName = new ArrayList<>();
-    public static ArrayList<Animal> listOfAnimals = new ArrayList<>();
-    private static void getListOfAnimal() {
+    public  static ArrayList<Animal> listOfAnimals = new ArrayList<>();
+    protected static void getListOfAnimal() {
         for (int i = 0; i <= listOfAnimalsName.size() - 1; i++) {
             String animals = String.format("%d. %s", i + 1, listOfAnimalsName.get(i));
             System.out.println(animals);
