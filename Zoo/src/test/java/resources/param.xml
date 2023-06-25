@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression">
+    <test name="Regression tests" parallel="true" thread-count="5">
+        <parameter name="xml-param" value="cranny"></parameter>
+        <classes>
+            <class name="TestOfMenu">
+                <methods>
+                    <include name="xmlParametrizedTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
