@@ -14,7 +14,8 @@ public class MyTestListener implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result){
-        System.out.println("Test was failed. Check logs.");
+        String testName = result.getName();
+        String testMethodName = result.getMethod().getMethodName();
+        System.out.println(testName + " was failed on " + testMethodName + " Check logs.");
     }
-
 }

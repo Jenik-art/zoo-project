@@ -2,6 +2,7 @@ import Zoo.Birds.Crow;
 import Zoo.Fishes.Shark;
 import Zoo.Mammals.Lion;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -32,5 +33,11 @@ public class TestIBreathData {
             result = true;
         } else result = false;
         Assert.assertTrue(result, "Expected \"He breaths the air\" text is not presented");
+    }
+
+    @Test (groups = "smoke")
+    public static void testForFail(){
+        System.out.println("Special failed test");
+        Assert.fail("Test was failed");
     }
 }

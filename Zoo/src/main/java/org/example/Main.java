@@ -1,6 +1,5 @@
 package org.example;
 
-import Zoo.Mammals.Lion;
 import Zoo.Menu;
 
 public class Main {
