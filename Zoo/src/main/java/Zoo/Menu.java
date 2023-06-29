@@ -46,7 +46,7 @@ public class Menu {
         listOfAnimals.add(jet);
         listOfAnimals.add(handsome);
 
-        int choice;
+        int choice = 0;
         System.out.println("What would you like to see? Choose any options to get more information about animal:");
 
         do {
@@ -60,13 +60,13 @@ public class Menu {
                     listOfAnimals.get(choice - 1).getAllInfo();
                     System.out.println("Would you like to see other animal?");
                     System.out.println();
-                } else if (choice != 0 && choice > 9){
+                } else if (choice > 9){
                     System.out.println("Please choose one more time.");
                 }
             }catch (InputMismatchException e){
                 System.out.println("Unknown command. Please, try again.");
+                continue;
             }
-            choice = 10; // Probably there is another solution to fix this issue, where variable is not visible for loop
         } while (choice !=0);
 
     }

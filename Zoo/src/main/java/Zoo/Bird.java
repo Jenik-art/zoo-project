@@ -5,7 +5,8 @@ public abstract class Bird extends Animal {
         String breathAir = "He breaths the air";
         return breathAir;
     }
-    public void iMove(){
-        System.out.println("He flies in the sky");
+    public String iMove(){
+        String fliesInTheSky = "He flies in the sky";
+        return fliesInTheSky;
     }
 }

@@ -5,7 +5,8 @@ public abstract class Fish extends Animal {
         String breathWater = "He breaths the water";
         return breathWater;
     }
-    public void iMove(){
-        System.out.println("He swims in the water");
+    public String iMove(){
+        String iSwim = "He swims in the water";
+        return iSwim;
     }
 }

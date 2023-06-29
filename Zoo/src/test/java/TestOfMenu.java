@@ -1,5 +1,6 @@
 import Zoo.Animal;
 import Zoo.Birds.Crane;
+import Zoo.Birds.Crow;
 import Zoo.Fishes.Shark;
 import Zoo.Mammal;
 import Zoo.Mammals.Lion;
@@ -10,6 +11,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 @Listeners(MyTestListener.class)
 public class TestOfMenu extends Menu{
@@ -48,6 +50,19 @@ public class TestOfMenu extends Menu{
                 {"Extremely beautiful shark ", "Sharkyra"},
                 {"Really smart shark ", "Sharkas"}
         };
+    }
+
+    @Test (groups = "extended")
+    public static void checkCrow(){
+        Crow testCrow = new Crow("TestCrowName");
+        SoftAssert softAssert = new SoftAssert();
+        String iBreath = "He breaths the air";
+        String iMove = "Special failed text";
+        softAssert.assertEquals(testCrow.iBreath(), iBreath);
+        softAssert.assertEquals(testCrow.iMove(), iMove);
+
+        softAssert.assertAll();
+
     }
 
 }

@@ -5,8 +5,9 @@ public abstract class Mammal extends Animal {
         String breathAir = "He breaths the air";
         return breathAir;
     }
-    public void iMove(){
-        System.out.println("He walks the earth");
+    public String iMove(){
+        String moveAtEarth = "He walks the earth";
+        return moveAtEarth;
     }
 
 
